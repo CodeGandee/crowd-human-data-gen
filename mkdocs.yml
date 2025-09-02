@@ -75,12 +75,15 @@ nav:
     - Models: api/models.md
     - Pipelines: api/pipelines.md
     - Utilities: api/utils.md
+    - Stable Diffusion Workflow: api/stable-diffusion-workflow.md
   - Examples:
     - Text to Image: examples/text-to-image.md
     - Image to Image: examples/image-to-image.md
     - Inpainting: examples/inpainting.md
     - LoRA Adapters: examples/lora.md
     - IP Adapters: examples/ip-adapter.md
+    - Stable Diffusion Processors: examples/stable-diffusion-processors.md
+    - Background Generation: examples/background-generation.md
   - Development:
     - Contributing: development/contributing.md
     - Testing: development/testing.md
