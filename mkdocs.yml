@@ -1,0 +1,93 @@
+site_name: AIGC GUI Documentation
+site_description: AI-Generated Content GUI - Stable Diffusion Image Generation Platform
+site_author: nie_yj
+site_url: https://codegandee.github.io/crowd-human-data-gen/
+
+repo_name: CodeGandee/crowd-human-data-gen
+repo_url: https://github.com/CodeGandee/crowd-human-data-gen
+edit_uri: edit/main/docs/
+
+# For GitHub Pages deployment
+use_directory_urls: true
+strict: false
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.copy
+    - content.code.select
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [.]
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Quick Start: getting-started/quick-start.md
+    - Configuration: getting-started/configuration.md
+  - API Reference:
+    - Models: api/models.md
+    - Pipelines: api/pipelines.md
+    - Utilities: api/utils.md
+  - Examples:
+    - Text to Image: examples/text-to-image.md
+    - Image to Image: examples/image-to-image.md
+    - Inpainting: examples/inpainting.md
+    - LoRA Adapters: examples/lora.md
+    - IP Adapters: examples/ip-adapter.md
+  - Development:
+    - Contributing: development/contributing.md
+    - Testing: development/testing.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/CodeGandee/crowd-human-data-gen
+  version:
+    provider: mike
