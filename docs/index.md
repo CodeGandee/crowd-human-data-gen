@@ -1,6 +1,12 @@
-# AIGC GUI Documentation
+# Crowd Human Data Generation Documentation
 
-Welcome to the **AIGC GUI** project - an AI-Generated Content platform built on top of Stable Diffusion models for advanced image generation capabilities.
+This repository contains documentation for two complementary projects for synthetic data generation and AI-powered image generation:
+
+## AIGC GUI
+An AI-Generated Content platform built on top of Stable Diffusion models for advanced image generation capabilities.
+
+## RenderToolbox
+A Python-based synthetic data generation toolkit for creating annotated training datasets from 3D scenes and character assets.
 
 ## Overview
 
@@ -77,6 +83,22 @@ Explore our comprehensive examples:
 - [Inpainting Examples](examples/inpainting.md)
 - [LoRA Adapter Usage](examples/lora.md)
 - [IP Adapter Implementation](examples/ip-adapter.md)
+
+## RenderToolbox Documentation
+
+RenderToolbox provides comprehensive 3D scene rendering and synthetic data generation capabilities for computer vision training datasets:
+
+**📖 [Complete RenderToolbox Guide](rendertoolbox/README.md)** - Comprehensive overview and getting started guide
+
+### Quick Access
+- [TaskManager Usage Guide](rendertoolbox/TaskManager_Usage.md) - Basic task generation and management (`TaskManager.py`)
+- [COCO-style Data Generation](rendertoolbox/TaskManager_coco_like_data_Usage.md) - COCO-format datasets (`TaskManager_coco_like_data.py`)
+
+### Key Features
+- **Multi-character 3D rendering** with realistic occlusion handling
+- **COCO-format compatibility** with instance segmentation and keypoints  
+- **Database integration** using PostgreSQL + MinIO object storage
+- **Comprehensive annotations**: RGB, depth, head/face masks, visibility stats
 
 ## API Reference
 
