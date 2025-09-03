@@ -1,12 +1,15 @@
 # Crowd Human Data Generation Documentation
 
-This repository contains documentation for two complementary projects for synthetic data generation and AI-powered image generation:
+This repository contains documentation for three complementary projects for synthetic data generation and AI-powered image generation:
 
 ## AIGC GUI
 An AI-Generated Content platform built on top of Stable Diffusion models for advanced image generation capabilities.
 
 ## RenderToolbox
 A Python-based synthetic data generation toolkit for creating annotated training datasets from 3D scenes and character assets.
+
+## SyntheticDataLoader
+A comprehensive PostgreSQL + MinIO data loading toolkit designed for efficient retrieval and management of synthetic human datasets, supporting both traditional UUID-based and modern SQLAlchemy ID-based loading approaches.
 
 ## Overview
 
@@ -43,6 +46,12 @@ AIGC GUI is a comprehensive FastAPI-based web application that provides various 
 - Comprehensive testing suite
 - Modular pipeline architecture
 - Easy model configuration and switching
+
+### 🗄️ Data Management Integration
+- **PostgreSQL + MinIO Architecture**: Seamless integration with multi-database environments
+- **Flexible Loading Patterns**: Support for both UUID-based and ID-based sample retrieval
+- **Rich Metadata Support**: Comprehensive scene and person-level component handling
+- **PyTorch Integration**: Native Dataset/DataLoader wrappers for ML workflows
 
 ## Quick Start
 
@@ -99,6 +108,21 @@ RenderToolbox provides comprehensive 3D scene rendering and synthetic data gener
 - **COCO-format compatibility** with instance segmentation and keypoints  
 - **Database integration** using PostgreSQL + MinIO object storage
 - **Comprehensive annotations**: RGB, depth, head/face masks, visibility stats
+- **SyntheticDataLoader Integration**: Efficient data loading with SQLAlchemy and traditional UUID-based approaches
+
+## SyntheticDataLoader
+
+**📖 [SyntheticDataLoader Complete Guide](SyntheticDataLoaderSQLAlchemy.md)** - Comprehensive documentation for the data loading toolkit
+
+### Key Features
+- **Multi-Database Architecture**: Connects to datasets, taskinfos, sceneinfos, and render PostgreSQL databases
+- **Flexible Loading Approaches**: 
+  - SQLAlchemy-based loading with 1-based ID indexing (recommended)
+  - Traditional UUID-based loading for legacy compatibility
+- **MinIO Integration**: Seamless binary file retrieval from object storage
+- **Rich Component Structure**: Scene and person-level data with comprehensive metadata
+- **PyTorch Dataset Support**: Native integration with PyTorch training pipelines
+- **Static Sample Tables**: Optimized aggregated tables for efficient sequential access
 
 ## API Reference
 

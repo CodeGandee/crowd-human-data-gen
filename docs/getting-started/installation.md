@@ -7,6 +7,7 @@ This guide will help you set up the AIGC GUI development environment on your loc
 - Python 3.13.5+ (managed via Pixi)
 - Git
 - Sufficient disk space for model storage (20GB+ recommended)
+- **For SyntheticDataLoader**: PostgreSQL databases (datasets, taskinfos, sceneinfos) and MinIO object storage
 
 ## Environment Setup
 
@@ -70,6 +71,18 @@ The application uses MongoDB for data storage:
 
 # Create a .env file with your MongoDB connection string
 echo "MONGODB_URL=mongodb://localhost:27017/aigc_gui" > .env
+```
+
+## SyntheticDataLoader Setup
+
+For data loading functionality, configure your database connections:
+
+```bash
+# Install additional dependencies for SyntheticDataLoader
+pip install sqlalchemy psycopg2-binary omegaconf minio numpy opencv-python imageio pgvector matplotlib
+
+# Configure database connections in config/database_config.yaml
+# Update MinIO, PostgreSQL database settings according to your environment
 ```
 
 ## Verification

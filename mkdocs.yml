@@ -84,6 +84,12 @@ nav:
     - IP Adapters: examples/ip-adapter.md
     - Stable Diffusion Processors: examples/stable-diffusion-processors.md
     - Background Generation: examples/background-generation.md
+  - RenderToolbox:
+    - Overview: rendertoolbox/README.md
+    - TaskManager Usage: rendertoolbox/TaskManager_Usage.md
+    - COCO Data Generation: rendertoolbox/TaskManager_coco_like_data_Usage.md
+  - SyntheticDataLoader:
+    - Complete Guide: SyntheticDataLoaderSQLAlchemy.md
   - Development:
     - Contributing: development/contributing.md
     - Testing: development/testing.md

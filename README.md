@@ -1,10 +1,15 @@
 # Crowd Human Data Gen
 
-> Generate human image data for vision model training
+> Generate human image data for vision model training with comprehensive data loading capabilities
 
 ## Overview
 
-This project aims to develop a comprehensive pipeline for generating high-quality human image datasets specifically designed for training vision models. The system will focus on creating diverse, realistic human imagery data that can be used for various computer vision tasks including person detection, pose estimation, action recognition, and human behavior analysis.
+This project aims to develop a comprehensive pipeline for generating high-quality human image datasets specifically designed for training vision models. The system includes both data generation and efficient data loading capabilities, focusing on creating diverse, realistic human imagery data that can be used for various computer vision tasks including person detection, pose estimation, action recognition, and human behavior analysis.
+
+**Key Components:**
+- **Data Generation Pipeline**: Create photorealistic synthetic human datasets
+- **SyntheticDataLoader**: Efficient PostgreSQL + MinIO data loading toolkit
+- **AIGC GUI**: AI-powered image generation interface
 
 ## Project Goals
 
@@ -21,6 +26,8 @@ This project aims to develop a comprehensive pipeline for generating high-qualit
 - Surveillance and security applications
 - Sports analytics and movement analysis
 - Retail and customer behavior analysis
+- **Machine Learning Training**: Efficient data loading for PyTorch/TensorFlow workflows
+- **Large-scale Dataset Management**: Multi-database synthetic data organization
 
 ## Technical Approach
 
@@ -60,6 +67,12 @@ This project aims to develop a comprehensive pipeline for generating high-qualit
 - **AI/ML Frameworks**: PyTorch/TensorFlow for procedural generation
 - **Computer Graphics**: OpenGL/DirectX for real-time rendering
 - **Data Processing**: Python ecosystem (NumPy, OpenCV, PIL)
+
+### Data Infrastructure
+- **Database Systems**: PostgreSQL with pgvector extension for vector operations
+- **Object Storage**: MinIO for scalable binary file storage
+- **Data Loading**: SQLAlchemy ORM with optimized query patterns
+- **ML Integration**: Native PyTorch Dataset/DataLoader support
 
 ### Infrastructure
 - **Cloud Computing**: Scalable rendering pipeline
@@ -108,6 +121,8 @@ This project is currently in the planning and design phase. Implementation detai
 - GPU with CUDA support (recommended)
 - Sufficient storage space for dataset generation
 - 3D rendering software (Blender/Unity/Unreal)
+- **PostgreSQL** with pgvector extension
+- **MinIO** object storage server
 
 ### Installation (Coming Soon)
 `ash
